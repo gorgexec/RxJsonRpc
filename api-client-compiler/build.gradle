@@ -1,9 +1,35 @@
 apply plugin: 'java-library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'rxjsonrpc-api-client-compiler'
+
+    publishedGroupId = 'com.gorgexec.rxjsonrpc'
+    libraryName = 'rxjsonrpc-api-client-compiler'
+    artifact = 'api-client-compiler'
+
+    libraryDescription = 'RxJsonRpc library client api compiler'
+
+    siteUrl = 'https://github.com/gorgexec/RxJsonRpc'
+    gitUrl = 'https://github.com/gorgexec/RxJsonRpc.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'gorgexec'
+    developerName = 'George S'
+    developerEmail = 'gorgexec@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':api')
 }
 
-sourceCompatibility = "8"
-targetCompatibility = "8"
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

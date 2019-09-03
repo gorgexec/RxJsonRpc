@@ -28,7 +28,7 @@ import javax.lang.model.element.TypeElement;
 
 public abstract class CommonProcessor extends AbstractProcessor {
 
-    static final String IMPLEMENTATION_SUFFIX = "_Impl";
+    public static final String IMPLEMENTATION_SUFFIX = "_Impl";
 
     private Class<? extends Annotation> methodAnnotation;
     private String fieldName;

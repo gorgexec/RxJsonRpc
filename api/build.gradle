@@ -8,7 +8,7 @@ ext {
     libraryName = 'rxjsonrpc-api'
     artifact = 'api'
 
-    libraryDescription = 'RxJsonRpc component for retrofit-style api'
+    libraryDescription = 'RxJsonRpc retrofit-style api component'
 
     siteUrl = 'https://github.com/gorgexec/RxJsonRpc'
     gitUrl = 'https://github.com/gorgexec/RxJsonRpc.git'
@@ -33,5 +33,5 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
